@@ -1,0 +1,31 @@
+
+
+time shift
+
+
+Question:
+how many unknown samples
+leave unknown words as original labels?
+
+use bigger batches
+
+- first get silence samples
+- then train with noise
+- then time shift
+
+
+- no unknown in training. Only at the end at test time
+  Because, if 'bed' comes, it might not excite the unknown, but might excite it's own neuron
+
+- more training for off, stop, up, go
+
+
+- optimization algo
+
+Change learning rate decay
+need bigger decay
+
+
+can mfcc work on 0-1 audio?
+
+why are eval and testing results so different?

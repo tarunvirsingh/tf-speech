@@ -1,0 +1,36 @@
+use bck gnd noise only in training
+background
+time shift
+silence
+input reset every iteration. so use at least one epoch per iteration
+
+for a given filename, mix in bck noise
+for each epoch, the mixing of bck noise should be random
+
+generate samples for silence
+genarate samples for unknown
+
+Question:
+how many unknown samples
+leave unknown words as original labels?
+
+use bigger batches
+
+- first get silence samples
+- then train with noise
+- then time shift
+
+- fix silence. My train and eval silence is 0. Test silence is not
+
+- no unknown in training. Only at the end at test time
+  Because, if 'bed' comes, it might not excite the unknown, but might excite it's own neuron
+
+- more training for off, stop, up, go
+
+- implement dropout
+- optimization algo
+
+Change learning rate decay
+need bigger decay
+
+make training faster
